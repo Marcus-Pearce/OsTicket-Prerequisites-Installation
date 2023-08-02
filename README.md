@@ -46,6 +46,8 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 
 
 <p>
+![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/a295a42d-d9d4-499f-b2b9-d8ad5d64de1f)
+
 
 </p>
 <p>
@@ -60,3 +62,8 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
   Remote into the VM and enable IIS in Windows. Turning on CGI and the remaining unchecked from Common HTTP Features. Then install all dependencies need for OsTicket and then install OsTicket
 </p>
 <br />
+
+![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/b7d08b20-520c-4a89-96c3-4dbb6d3395f2)
+
+
+![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/74e4ece4-6b4a-4d54-bd26-e400b46c746c)
