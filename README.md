@@ -46,7 +46,7 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 
 
 <p>
-![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/a295a42d-d9d4-499f-b2b9-d8ad5d64de1f)
+
 
 
 </p>
@@ -64,6 +64,6 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 <br />
 
 ![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/b7d08b20-520c-4a89-96c3-4dbb6d3395f2)
-
+<p> Change the ost-config.php file's permissions back to read access only. After using the service delete the C:\inetpub\wwwroot\osTicket\setup folder. </p>
 
 ![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/74e4ece4-6b4a-4d54-bd26-e400b46c746c)
