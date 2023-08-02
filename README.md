@@ -57,6 +57,6 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 
 <p>
 <p>
-  Remote into the VM and enable IIS in Windows. Turning on CGI and the remaining unchecked from Common HTTP Features.
+  Remote into the VM and enable IIS in Windows. Turning on CGI and the remaining unchecked from Common HTTP Features. Then install all dependencies need for OsTicket and then install OsTicket
 </p>
 <br />
