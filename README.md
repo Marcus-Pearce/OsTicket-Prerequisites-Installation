@@ -25,7 +25,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/4df16852-94c0-4ed1-95b6-5a304eba7bc4)
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/4df16852-94c0-4ed1-95b6-5a304eba7bc4)
 
 
 
@@ -46,7 +46,7 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 </p>
 <p>
   
-  ![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/d6769fe1-b85c-4011-9a80-fbfef7c8c811)
+  ![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/d6769fe1-b85c-4011-9a80-fbfef7c8c811)
 
 </p>
 <br />
@@ -57,7 +57,7 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 </p>
 <br />
 
-![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/b7d08b20-520c-4a89-96c3-4dbb6d3395f2)
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/b7d08b20-520c-4a89-96c3-4dbb6d3395f2)
 <p> Change the ost-config.php file's permissions back to read access only. After using the service delete the C:\inetpub\wwwroot\osTicket\setup folder. </p>
 
 ![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/bedbf321-ee38-45de-91e1-b4bea0408eaa)
