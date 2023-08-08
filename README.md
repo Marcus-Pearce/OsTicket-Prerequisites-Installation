@@ -31,7 +31,7 @@ https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 <p>
 Create an Azure free trial. Upon starting Azure you will have a subscription made for you giving you 200$ in free credits for demo. In reality you will create a new subscription for each department or company to prioritize costs of a service to the approriate account. Go to Virtual Machines and Create a 
-Azure Virtual Machine. Make a new Resource group for the VM to belong to. Set the VM's Operating system to Windows 10 with at least 2 Virtual CPUs. Name the VM osTicket and make sure to remember the login details.
+Azure Virtual Machine. Make a new Resource group for the VM to belong to. Set the VM's Operating system to Windows 10 with at least 2 Virtual CPUs. Name the VM osTicket and make sure to remember the login details.Check the "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights" box.
 </p>
 
 <p>
