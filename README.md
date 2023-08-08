@@ -58,7 +58,12 @@ After the deployment is finished go to Virtual Machines and copy the Public IP a
 <br />
 
 ![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/b7d08b20-520c-4a89-96c3-4dbb6d3395f2)
-<p> Change the ost-config.php file's permissions back to read access only. After using the service delete the C:\inetpub\wwwroot\osTicket\setup folder. </p>
+<p> Now go back to your main PC and copy the Installation Files URL (https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)  and once back on your VM paste in a new browser. Download and install PHP Manager(PHPManagerForIIS_V1.5.0.msi). Download and install the Rewrite Module(rewrite_amd64_en-US.msi). Create a folder in C: named "PHP". Download  PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip). Unzip the contents into C:\PHP. Download and install  VC_redist.x86.exe. Download and install  MySQL 5.5.62 (mysql-5.5.62-win32.msi). Choose a Typical Configuration and make sure "Launch Configuration Wizard" is checked. Choose Standard Configuration. Make sure it is the Root username and remember the login details created. Launch Internet Information Services as Administrator. Go to the PHP Manager and register the PHP exe. file. Restart IIS. Download and install osTicket v1.15.8. Extract and copy “upload” folder to c:\inetpub\wwwroot. Rename the "upload" folder to "osTicket". Restart IIS. Click Browse .80 after going to Sites/ Defaults/osTicket and the site tells you that some extensions are not enabled. Go to Sites, Defaults, osTicket and go to the PHP Manager. Click enable or disable an extension and enable "php_imap.dll","php_intl.dll", "php_opcache.dll". Refresh the browser and click continue. Restart IIS for the last time.
+Change C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\inetpub\wwwroot\osTicket\include\ost-config.php.
+
+
+
+ </p>
 
 ![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/bedbf321-ee38-45de-91e1-b4bea0408eaa)
 
