@@ -24,24 +24,25 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Installation Steps</h2>
+<p> Start by preparing your environment for the task. Have the Installation Files page open and loaded before proceeding to the next steps.
+Installation files-
+https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+</p>
+
+<p>
+Create an Azure free trial. Upon starting Azure you will have a subscription made for you giving you 200$ in free credits for demo. In reality you will create a new subscription for each department or company to prioritize costs of a service to the approriate account. Go to Virtual Machines and Create a 
+Azure Virtual Machine. Make a new Resource group for the VM to belong to. Set the VM's Operating system to Windows 10 with at least 2 Virtual CPUs. Name the VM osTicket and make sure to remember the login details.
+</p>
+
+<p>
 
 ![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/4df16852-94c0-4ed1-95b6-5a304eba7bc4)
-
-
-
-<p>
-
-
 </p>
-<p>
-After making your subscription go to Virtual Machines and Create a Virtual Machine running Windows 10 with at least 2 Virtual CPUs.
-</p>
+
 <br />
 
-
-<p>
-
-
+<p>Let the Virtual Machine create the virtual network and subnet. Azure will validate that the configurations have passed and then click Create.
+Allow time for the deployment.
 
 </p>
 <p>
@@ -50,10 +51,9 @@ After making your subscription go to Virtual Machines and Create a Virtual Machi
 
 </p>
 <br />
+<p>
 
-<p>
-<p>
-  Remote into the VM and enable IIS in Windows. Turning on CGI and the remaining unchecked from Common HTTP Features. Then install all dependencies need for OsTicket and then install OsTicket
+After the deployment is finished go to Virtual Machines and copy the Public IP address from the osTicket VM.Open Remote Desktop and paste the Vm's public IP address. Log in using the credential used during creation. Open control panel in the Virtual Machine go to Programs and then "Turn Windows Features on or Off" option. Find Internet Information Services and check the box enabling it.Go to World Web Services and make sure all of the Common HTTP Features are enabled. In Application Development Features Enable CGI. In Web Management Tools make sure IIS Management Console is enabled. Then click okay and let Windows make the changes. To ensure IIS is enabled go to a browser and enter a loopback address(127.0.0.1) to show Internet Information Services page. If page doesn't load, repeat steps.
 </p>
 <br />
 
