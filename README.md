@@ -58,12 +58,51 @@ After the deployment is finished go to Virtual Machines and copy the Public IP a
 <br />
 
 ![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/b7d08b20-520c-4a89-96c3-4dbb6d3395f2)
-<p> Now go back to your main PC and copy the Installation Files URL (https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)  and once back on your VM paste in a new browser. Download and install PHP Manager(PHPManagerForIIS_V1.5.0.msi). Download and install the Rewrite Module(rewrite_amd64_en-US.msi). Create a folder in C: named "PHP". Download  PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip). Unzip the contents into C:\PHP. Download and install  VC_redist.x86.exe. Download and install  MySQL 5.5.62 (mysql-5.5.62-win32.msi). Choose a Typical Configuration and make sure "Launch Configuration Wizard" is checked. Choose Standard Configuration. Make sure it is the Root username and remember the login details created. Launch Internet Information Services as Administrator. Go to the PHP Manager and register the PHP exe. file. Restart IIS. Download and install osTicket v1.15.8. Extract and copy “upload” folder to c:\inetpub\wwwroot. Rename the "upload" folder to "osTicket". Restart IIS. Click Browse .80 after going to Sites/ Defaults/osTicket and the site tells you that some extensions are not enabled. Go to Sites, Defaults, osTicket and go to the PHP Manager. Click enable or disable an extension and enable "php_imap.dll","php_intl.dll", "php_opcache.dll". Refresh the browser and click continue. Restart IIS for the last time.
+<p> Now go back to your main PC and copy the Installation Files URL (https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)  and once back on your VM paste in a new browser. Download and install PHP Manager(PHPManagerForIIS_V1.5.0.msi). Download and install the Rewrite Module(rewrite_amd64_en-US.msi). Create a folder in C: named "PHP". Download  PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip). Unzip the contents into C:\PHP. Download and install  VC_redist.x86.exe. Download and install  MySQL 5.5.62 (mysql-5.5.62-win32.msi). Choose a Typical Configuration and make sure "Launch Configuration Wizard" is checked. Choose Standard Configuration. Make sure to remember the login details created. Enable root access. Launch Internet Information Services as Administrator. Go to the PHP Manager and register the PHP file (php-cgi.exe). file. Restart IIS. Download and install osTicket v1.15.8. Extract and copy “upload” folder to c:\inetpub\wwwroot. Rename the "upload" folder to "osTicket". Restart IIS. Click Browse .80 after going to Sites/ Defaults/osTicket and the site tells you that some extensions are not enabled. </p>
+
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/5948f2ca-324c-4db2-a4d5-11090fa8d444)
+
+<p>
+Go to Sites, Defaults, osTicket and go to the PHP Manager. Click enable or disable an extension and enable "php_imap.dll","php_intl.dll", "php_opcache.dll". Refresh the browser and click continue. Restart IIS for the last time.</p>
+
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/b623feea-f7c0-4b3c-94dc-ab743dc4d0bf)
+
+Notice the changes after refreshing Browser.
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/da992219-2295-49c0-93e8-1a84bbb05cf2)
+
+
+
+
+
+<p>
+Disable inheritance by going to the ost-config.php file's Properties, then Security and Advanced. Then remove all inherited permissions from this object. Add a new permission for "Everyone" and set it to full control.
+
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/adbbe908-d3bc-4842-953c-72e55253d6f9)
+
+</p>
+
 Change C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\inetpub\wwwroot\osTicket\include\ost-config.php.
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/2c120038-3da5-4ed1-863e-cc1d8e6fea39)
 
+<p>
+Download and install HeidiSQL(HeidiSQL_12.3.0.6589_Setup.exe).Open Heidi SQL and create a new session. Connect to the session and create a database called “osTicket”.
 
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/7776aa04-1c24-4bc1-a7da-fec05a3c1b75)
 
- </p>
+</p>
+<p>
+Make sure to remember the "Root" credentials created earlier. The database name has to match the one created in order to work.
 
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/a3b6e966-d900-4a5d-a658-6d0689d6182f)
+
+</p>
+<p>
+ Change permission of ost-config.php to remove write access and set to Read only.
+
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/aa12f3e6-a143-4f94-8145-7c5880c77e2b)
+
+</p>
+
+Delete: C:\inetpub\wwwroot\osTicket\setup folder and you have successfully installed osTicket along with all of its prerequisites.
 ![image](https://github.com/Mrpearce92/osticket-prereqs/assets/140969692/bedbf321-ee38-45de-91e1-b4bea0408eaa)
 
