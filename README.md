@@ -47,7 +47,7 @@ Allow time for the deployment.
 </p>
 <p>
   
-  ![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/d6769fe1-b85c-4011-9a80-fbfef7c8c811)
+![image](https://github.com/Marcus-Pearce/osticket-prereqs/assets/140969692/d6769fe1-b85c-4011-9a80-fbfef7c8c811)
 
 </p>
 <br />
